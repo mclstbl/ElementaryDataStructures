@@ -15,7 +15,7 @@ public class SnocList implements Queue{
         this.c = c;
         this.l = l;
     }
-    //new SnocList(’a’, new SnocList(’p’, new SnocList(’p’,null))) represents the list p,p,a.
+
     public char peek(){
     // front
         return this.c;
@@ -34,12 +34,8 @@ public class SnocList implements Queue{
     }
 
 
-    public boolean isEmpty ( ) {
+    public boolean isEmpty(){
         if (this.c != '\0') return true;
         else return false;
-    }
-
-    public void show(PrintStream p){
-
     }
 }

@@ -15,17 +15,14 @@ public class ArrayStack implements Stack {
         return stack.get(0);
     }
 
-    //remove the last element( remove the element of last index)
-    public void pop (){
+    public void pop(){
         stack.remove(0);
     }
 
-    //add element into the stack
-    public void push (char c){
+    public void push(char c){
         stack.add(c);
     }
 
-    //check if the size is 0
     public boolean isEmpty() {
         if (stack.size() == 0) return true;
         else return false;

@@ -28,8 +28,13 @@ public class PList implements PriQueue {
         this.tl = tl.tl;
     }
     public void insertItem(int i, char c){
-    // int priority , then alphabetical
-
+        if(this.priority < i){
+            this.tl = this;
+            this.hd = i;
+        }
+        else{
+            this.tl.insertItem(i,c);
+        }
     }
     public boolean isEmpty ( ){
         if (this.hd == "\0") return true;
